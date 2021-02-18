@@ -8,29 +8,29 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "ConvivaAVFoundation",
-            targets: ["ConvivaAVFoundationTarget"])
+            targets: ["ConvivaAVFoundation"])
     ],
     dependencies: [
-        .package(
-            name: "ConvivaSDK",
-            url: "https://github.com/sandeep-madineni/ConvivaAVFoundation",
-            .branch("main")
-        )
+//        .package(
+//            name: "ConvivaSDK",
+//            url: "https://github.com/sandeep-madineni/ConvivaAVFoundation",
+//            .branch("main")
+//        )
     ],
     targets: [
-        .target(
-              name: "ConvivaAVFoundationTarget",
-              dependencies: [.target(name: "ConvivaAVFoundationWrapper")],
-              path: "PlatformExcludes"
-            ),
-        
-        .target(
-                name: "ConvivaAVFoundationWrapper",
-                dependencies: [
-                    .product(name: "ConvivaSDK", package: "ConvivaSDK")
-                ],
-                path: "ConvivaAVFoundationWrapper"
-            ),
+//        .target(
+//              name: "ConvivaAVFoundationTarget",
+//              dependencies: [.target(name: "ConvivaAVFoundationWrapper")],
+//              path: "PlatformExcludes"
+//            ),
+//
+//        .target(
+//                name: "ConvivaAVFoundationWrapper",
+//                dependencies: [
+//                    .product(name: "ConvivaSDK", package: "ConvivaSDK")
+//                ],
+//                path: "ConvivaAVFoundationWrapper"
+//            ),
         .binaryTarget(
              name: "ConvivaAVFoundation",
              path: "./Framework/ConvivaAVFoundation.xcframework"
