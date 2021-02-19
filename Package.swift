@@ -20,17 +20,19 @@ let package = Package(
     targets: [
         .target(
               name: "ConvivaAVFoundationTarget",
-              dependencies: [.target(name: "ConvivaAVFoundationWrapper")],
+              dependencies: [
+                .product(name: "ConvivaSDK", package: "ConvivaSDK")
+              ],
               path: "PlatformExcludes"
             ),
-
-        .target(
-                name: "ConvivaAVFoundationWrapper",
-                dependencies: [
-                    .product(name: "ConvivaSDK", package: "ConvivaSDK")
-                ],
-                path: "ConvivaAVFoundationWrapper"
-            ),
+//
+//        .target(
+//                name: "ConvivaAVFoundationWrapper",
+//                dependencies: [
+//                    .product(name: "ConvivaSDK", package: "ConvivaSDK")
+//                ],
+//                path: "ConvivaAVFoundationWrapper"
+//            ),
         .binaryTarget(
             name: "ConvivaAVFoundation",
             url: "https://github.com/sandeep-madineni/ConvivaLibs/raw/main/ConvivaAVFoundation/1.0.0/ConvivaAVFoundation.xcframework.zip",
