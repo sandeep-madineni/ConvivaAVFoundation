@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ConvivaSDK",
+        "repositoryURL": "https://github.com/sandeep-madineni/ConvivaSDK",
+        "state": {
+          "branch": "main",
+          "revision": "4abe0699ee214d60929b21bf5daaa12d5c8e681c",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

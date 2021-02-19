@@ -32,8 +32,8 @@ let package = Package(
                 path: "ConvivaAVFoundationWrapper"
             ),
         .binaryTarget(
-             name: "ConvivaAVFoundation",
-             path: "./Framework/ConvivaAVFoundation.xcframework"
-        )
+            name: "ConvivaAVFoundation",
+            url: "https://github.com/sandeep-madineni/ConvivaLibs/raw/main/ConvivaAVFoundation/1.0.0/ConvivaAVFoundation.xcframework.zip",
+            checksum: "f6702ad35ee8e81380ee5bfb511796ed6d82b572c90f107df88f6e8cb5affdad")
      ]
 )
