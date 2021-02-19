@@ -10,13 +10,6 @@ let package = Package(
             name: "ConvivaAVFoundation",
             targets: ["ConvivaAVFoundationTarget"])
     ],
-//    dependencies: [
-//        .package(
-//            name: "ConvivaSDK",
-//            url: "https://github.com/sandeep-madineni/ConvivaSDK",
-//            .branch("main")
-//        )
-//    ],
     targets: [
         .binaryTarget(
             name: "ConvivaAVFoundation",
@@ -33,17 +26,8 @@ let package = Package(
               dependencies: [
                 .target(name: "ConvivaSDK"),
                 .target(name: "ConvivaAVFoundation")
-                //.product(name: "ConvivaSDK", package: "ConvivaSDK")
               ],
               path: "PlatformExcludes"
             )
-//
-//        .target(
-//                name: "ConvivaAVFoundationWrapper",
-//                dependencies: [
-//                    .product(name: "ConvivaSDK", package: "ConvivaSDK")
-//                ],
-//                path: "ConvivaAVFoundationWrapper"
-//            ),
      ]
 )
